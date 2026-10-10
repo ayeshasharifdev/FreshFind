@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshFind</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="seasonal.css">
+
+</head>
+
+<body>
+
+<div class="hero-wrapper">
+
+    <nav class="navbar navbar-expand-lg fresh-navbar">
+
+        <div class="container-fluid navbar-container">
+
+            <!-- Logo -->
+            <a href="#" class="navbar-brand fresh-logo">
+
+                <div class="leaf-logo">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <div class="logo-text">
+                    <span class="brand-name">FreshFind</span>
+
+                    <span class="brand-tagline">
+                        Green Basket • Fresh Life
+                    </span>
+                </div>
+
+            </a>
+
+
+            <!-- Mobile Button -->
+            <button
+                class="navbar-toggler menu-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#freshNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Navbar -->
+            <div class="collapse navbar-collapse" id="freshNavbar">
+
+                <ul class="navbar-nav fresh-nav-links">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="MD.html">
+                            Market Directory
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="produce guide (2).html">
+                            Produce Guide
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="seasonal rec.html">
+                            Seasonal
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="chat.html.html">
+                            Chatbot
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">
+                            About Us
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                 <div class="navbar-right">
+                
+                <button type="button"
+                        class="nav-icon search-toggle"
+                        id="searchToggle"
+                        aria-label="Open search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+                <!-- Wishlist Icon -->
+<div class="wishlist-wrapper">
+
+    <button class="wishlist-btn" id="wishlistBtn" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span class="wishlist-count">3</span>
+    </button>
+
+    <!-- Wishlist Popup -->
+    <div class="wishlist-popup" id="wishlistPopup">
+
+        <div class="wishlist-header">
+            <div>
+                <h2>
+                    <i class="fa-solid fa-heart"></i>
+                    My Wishlist
+                </h2>
+                <p>3 items saved for later</p>
+            </div>
+
+            <button class="wishlist-close" id="wishlistClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Wishlist Item 1 -->
+        <div class="wishlist-item">
+
+            <img src="tomato.png" alt="Fresh Tomatoes">
+
+            <div class="wishlist-info">
+                <h3>Fresh Tomatoes</h3>
+                <p>Vegetables</p>
+                <strong>Rs. 450 <small>/kg</small></strong>
+
+                <button class="add-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <button class="remove-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Wishlist Item 2 -->
+        <div class="wishlist-item">
+
+            <img src="lettuce.png" alt="Green Lettuce">
+
+            <div class="wishlist-info">
+                <h3>Green Lettuce</h3>
+                <p>Leafy Greens</p>
+                <strong>Rs. 80 <small>/piece</small></strong>
+
+                <button class="add-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <button class="remove-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Wishlist Item 3 -->
+        <div class="wishlist-item">
+
+            <img src="banana.png" alt="Banana">
+
+            <div class="wishlist-info">
+                <h3>Banana</h3>
+                <p>Fruits</p>
+                <strong>Rs. 280 <small>/kg</small></strong>
+
+                <button class="add-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <button class="remove-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Wishlist Footer -->
+        <div class="wishlist-footer">
+
+            <button class="clear-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+                Clear Wishlist
+            </button>
+
+            <button class="view-wishlist">
+                View All
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Login Button -->
+<button type="button"
+        class="login-btn"
+        id="openLogin">
+    Login
+</button>
+
+<!-- Sign Up Button -->
+<button type="button"
+        class="signup-btn"
+        id="openSignup">
+    Sign Up
+</button>
+                
+<div class="navbar-search-wrapper">
+
+    
+    <!-- Search bar -->
+    <div class="navbar-search-box" id="navbarSearchBox">
+
+        <form class="navbar-search-form" id="navbarSearchForm">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="navbarSearchInput"
+                placeholder="Search markets, produce or area..."
+                autocomplete="off"
+            >
+
+            <button type="button"
+                    class="search-close"
+                    id="searchClose">
+                &times;
+            </button>
+
+        </form>
+
+        <!-- SEARCH RESULTS -->
+        <div class="navbar-search-results" id="navbarSearchResults">
+            <!-- JavaScript results yahan dalegi -->
+        </div>
+            </div>
+
+        </div>
+
+   </nav>
+
+
+   <!-- SEASONAL HERO -->
+
+<section class="seasonal-hero">
+
+    <div class="seasonal-hero-overlay">
+
+        <div class="seasonal-hero-content">
+
+            <h1>Seasonal Recommendations</h1>
+
+            <p>
+                Discover what's in season right now and plan your next
+                fresh market visit.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MONTH SELECTOR -->
+
+<section class="month-selector-section">
+
+    <div class="month-selector">
+
+        <button class="month-arrow">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <h2>September</h2>
+
+        <button class="month-arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+<!-- IN SEASON NOW -->
+
+<section class="seasonal-products">
+
+    <div class="section-heading">
+
+        <h2>In Season Now</h2>
+
+        <p>
+            Fresh produce that's at its best this September.
+        </p>
+
+    </div>
+
+
+    <div class="products-container">
+
+        <!-- Apple -->
+
+        <div class="produce-card">
+
+            <div class="produce-image">
+                <img src="apple.png" alt="Fresh Apples">
+            </div>
+
+            <div class="produce-info">
+
+                <h3>Apples</h3>
+
+                <p>
+                    Crisp, sweet and perfect for a healthy snack.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tomato -->
+
+        <div class="produce-card">
+
+            <div class="produce-image">
+                <img src="tomato.png" alt="Fresh Tomatoes">
+            </div>
+
+            <div class="produce-info">
+
+                <h3>Tomatoes</h3>
+
+                <p>
+                    Juicy and flavorful, perfect for everyday meals.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Zucchini -->
+
+        <div class="produce-card">
+
+            <div class="produce-image">
+                <img src="zucchini.png" alt="Fresh Zucchini">
+            </div>
+
+            <div class="produce-info">
+
+                <h3>Zucchini</h3>
+
+                <p>
+                    Fresh, tender and great for healthy recipes.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Peaches -->
+
+        <div class="produce-card">
+
+            <div class="produce-image">
+                <img src="peaches.png" alt="Fresh Peaches">
+            </div>
+
+            <div class="produce-info">
+
+                <h3>Peaches</h3>
+
+                <p>
+                    Juicy and naturally sweet seasonal fruit.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="produce-card">
+
+            <div class="produce-image">
+                <img src="corn.png" alt="Fresh Corn">
+            </div>
+
+            <div class="produce-info">
+
+                <h3>Corn</h3>
+
+                <p>
+                    Sweet, fresh and perfect for summer dishes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TOP MARKETS -->
+
+<section class="top-markets">
+
+    <div class="markets-heading">
+
+        <h2>
+            Top Markets for <span id="marketMonth">September</span>
+        </h2>
+
+        <p>
+            Discover fresh local produce at nearby farmers markets.
+        </p>
+
+    </div>
+
+
+    <div class="markets-list">
+
+        <!-- MARKET 1 -->
+
+        <div class="market-card">
+
+            <div class="market-image">
+                <img src="market-1.png" alt="Farmers Market">
+            </div>
+
+            <div class="market-info">
+
+                <h3>Riverside Farmers Market</h3>
+
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Wednesday • 8:00 AM - 2:00 PM
+                </p>
+
+            </div>
+
+            <button class="view-market">
+                View
+            </button>
+
+        </div>
+
+
+        <!-- MARKET 2 -->
+
+        <div class="market-card">
+
+            <div class="market-image">
+                <img src="market-2.png" alt="Farmers Market">
+            </div>
+
+            <div class="market-info">
+
+                <h3>Maple Grove Market</h3>
+
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Wednesday • 8:00 AM - 3:00 PM
+                </p>
+
+            </div>
+
+            <button class="view-market">
+                View
+            </button>
+
+        </div>
+
+
+        <!-- MARKET 3 -->
+
+        <div class="market-card">
+
+            <div class="market-image">
+                <img src="market-3.png" alt="Farmers Market">
+            </div>
+
+            <div class="market-info">
+
+                <h3>Sunnyvale Farmers Market</h3>
+
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Sunday • 8:00 AM - 1:00 PM
+                </p>
+
+            </div>
+
+            <button class="view-market">
+                View
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+    const seasonalData = {
+
+        January: [
+            {
+                name: "Oranges",
+                description: "Juicy and refreshing winter citrus fruit.",
+                image: "orange.png"
+            },
+            {
+                name: "Carrots",
+                description: "Sweet, crunchy and perfect for healthy meals.",
+                image: "carrot.png"
+            },
+            {
+                name: "Spinach",
+                description: "Fresh leafy greens packed with nutrients.",
+                image: "spinach.png"
+            },
+            {
+                name: "Cauliflower",
+                description: "Fresh and versatile for winter recipes.",
+                image: "cauliflower.png"
+            },
+            {
+                name: "Peas",
+                description: "Sweet and tender seasonal vegetables.",
+                image: "peas.png"
+            }
+        ],
+
+        February: [
+            {
+                name: "Strawberries",
+                description: "Fresh, juicy and naturally sweet berries.",
+                image: "strawberries.png"
+            },
+            {
+                name: "Carrots",
+                description: "Crisp and naturally sweet root vegetables.",
+                image: "carrot.png"
+            },
+            {
+                name: "Spinach",
+                description: "Fresh green leaves for healthy meals.",
+                image: "spinach.png"
+            },
+            {
+                name: "Broccoli",
+                description: "Fresh and nutritious seasonal greens.",
+                image: "broccoli.png"
+            },
+            {
+                name: "Peas",
+                description: "Sweet and fresh seasonal peas.",
+                image: "peas.png"
+            }
+        ],
+
+        March: [
+            {
+                name: "Strawberries",
+                description: "Bright, juicy and naturally sweet.",
+                image: "strawberries.png"
+            },
+            {
+                name: "Lettuce",
+                description: "Crisp and refreshing fresh greens.",
+                image: "lettuce.png"
+            },
+            {
+                name: "Peas",
+                description: "Tender and sweet spring vegetables.",
+                image: "peas.png"
+            },
+            {
+                name: "Radishes",
+                description: "Crisp and colorful seasonal vegetables.",
+                image: "radishes.png"
+            },
+            {
+                name: "Asparagus",
+                description: "Fresh and tender spring produce.",
+                image: "aspa.png"
+            }
+        ],
+
+        April: [
+            {
+                name: "Strawberries",
+                description: "Sweet and juicy spring berries.",
+                image: "strawberries.png"
+            },
+            {
+                name: "Asparagus",
+                description: "Tender and fresh spring vegetables.",
+                image: "aspa.png"
+            },
+            {
+                name: "Peas",
+                description: "Fresh, sweet and perfect for spring meals.",
+                image: "peas.png"
+            },
+            {
+                name: "Lettuce",
+                description: "Crisp leafy greens for fresh salads.",
+                image: "lettuce.png"
+            },
+            {
+                name: "Radishes",
+                description: "Crunchy and colorful seasonal produce.",
+                image: "radishes.png"
+            }
+        ],
+
+        May: [
+            {
+                name: "Strawberries",
+                description: "Fresh and delicious early summer berries.",
+                image: "strawberries.png"
+            },
+            {
+                name: "Cherries",
+                description: "Juicy and naturally sweet seasonal fruit.",
+                image: "cherries.png"
+            },
+            {
+                name: "Lettuce",
+                description: "Crisp and refreshing fresh greens.",
+                image: "lettuce.png"
+            },
+            {
+                name: "Cucumbers",
+                description: "Cool, crisp and refreshing vegetables.",
+                image: "cucumber.png"
+            },
+            {
+                name: "Peas",
+                description: "Sweet and tender seasonal produce.",
+                image: "peas.png"
+            }
+        ],
+
+        June: [
+            {
+                name: "Cherries",
+                description: "Juicy summer fruit with a naturally sweet taste.",
+                image: "cherries.png"
+            },
+            {
+                name: "Peaches",
+                description: "Soft, juicy and naturally sweet fruit.",
+                image: "peaches.png"
+            },
+            {
+                name: "Cucumbers",
+                description: "Cool and crisp summer vegetables.",
+                image: "cucumber.png"
+            },
+            {
+                name: "Zucchini",
+                description: "Fresh and tender summer produce.",
+                image: "zucchini.png"
+            },
+            {
+                name: "Corn",
+                description: "Sweet and fresh summer corn.",
+                image: "corn.png"
+            }
+        ],
+
+        July: [
+            {
+                name: "Peaches",
+                description: "Juicy and naturally sweet summer fruit.",
+                image: "peaches.png"
+            },
+            {
+                name: "Blueberries",
+                description: "Fresh and delicious summer berries.",
+                image: "blueberries.png"
+            },
+            {
+                name: "Tomatoes",
+                description: "Juicy and flavorful summer produce.",
+                image: "tomato.png"
+            },
+            {
+                name: "Zucchini",
+                description: "Fresh and tender summer vegetables.",
+                image: "zucchini.png"
+            },
+            {
+                name: "Corn",
+                description: "Sweet and fresh summer corn.",
+                image: "corn.png"
+            }
+        ],
+
+        August: [
+            {
+                name: "Tomatoes",
+                description: "Juicy and flavorful seasonal produce.",
+                image: "tomato.png"
+            },
+            {
+                name: "Peaches",
+                description: "Sweet and juicy late-summer fruit.",
+                image: "peaches.png"
+            },
+            {
+                name: "Zucchini",
+                description: "Fresh and tender summer vegetables.",
+                image: "zucchini.png"
+            },
+            {
+                name: "Corn",
+                description: "Sweet, fresh and perfect for summer dishes.",
+                image: "corn.png"
+            },
+            {
+                name: "Bell Peppers",
+                description: "Colorful, crisp and full of flavor.",
+                image: "bellpepper.png"
+            }
+        ],
+
+        September: [
+            {
+                name: "Apples",
+                description: "Crisp, sweet and perfect for a healthy snack.",
+                image: "apple.png"
+            },
+            {
+                name: "Tomatoes",
+                description: "Juicy and flavorful, perfect for everyday meals.",
+                image: "tomato.png"
+            },
+            {
+                name: "Zucchini",
+                description: "Fresh, tender and great for healthy recipes.",
+                image: "zucchini.png"
+            },
+            {
+                name: "Peaches",
+                description: "Juicy and naturally sweet seasonal fruit.",
+                image: "peaches.png"
+            },
+            {
+                name: "Corn",
+                description: "Sweet, fresh and perfect for summer dishes.",
+                image: "corn.png"
+            }
+        ],
+
+        October: [
+            {
+                name: "Pumpkins",
+                description: "Fresh autumn produce perfect for seasonal recipes.",
+                image: "pumpkins.png"
+            },
+            {
+                name: "Apples",
+                description: "Crisp and sweet autumn apples.",
+                image: "apple.png"
+            },
+            {
+                name: "Pears",
+                description: "Juicy and naturally sweet autumn fruit.",
+                image: "peas.png"
+            },
+            {
+                name: "Broccoli",
+                description: "Fresh green vegetables for healthy meals.",
+                image: "broccoli.png"
+            },
+            {
+                name: "Carrots",
+                description: "Crunchy and naturally sweet seasonal produce.",
+                image: "carrot.png"
+            }
+        ],
+
+        November: [
+            {
+                name: "Pumpkins",
+                description: "A classic autumn seasonal favorite.",
+                image: "pumpkins.png"
+            },
+            {
+                name: "Pears",
+                description: "Sweet, juicy and perfect for autumn.",
+                image: "peas.png"
+            },
+            {
+                name: "Sweet Potatoes",
+                description: "Rich and delicious seasonal root vegetables.",
+                image: "potato.png"
+            },
+            {
+                name: "Broccoli",
+                description: "Fresh and nutritious cool-season produce.",
+                image: "broccoli.png"
+            },
+            {
+                name: "Carrots",
+                description: "Crisp and naturally sweet autumn vegetables.",
+                image: "carrot.png"
+            }
+        ],
+
+        December: [
+            {
+                name: "Oranges",
+                description: "Bright, juicy and refreshing winter citrus.",
+                image: "orange.png"
+            },
+            {
+                name: "Pomegranates",
+                description: "Rich, colorful and naturally sweet fruit.",
+                image: "pom.png"
+            },
+            {
+                name: "Carrots",
+                description: "Fresh and crunchy winter vegetables.",
+                image: "carrot.png"
+            },
+            {
+                name: "Spinach",
+                description: "Fresh leafy greens for healthy winter meals.",
+                image: "spinach.png"
+            },
+            {
+                name: "Cauliflower",
+                description: "Fresh and versatile cool-season produce.",
+                image: "cauliflower.png"
+            }
+        ]
+
+    };
+
+const marketData = {
+
+    January: [
+        {
+            name: "Winter Fresh Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "img12.png"
+        },
+        {
+            name: "Green Valley Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "img13.png"
+        },
+        {
+            name: "Fresh Harvest Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "img14.png"
+        }
+    ],
+
+    February: [
+        {
+            name: "Spring Grove Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "img15.png"
+        },
+        {
+            name: "Sunny Fields Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "img16.png"
+        },
+        {
+            name: "Local Harvest Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "img17.png"
+        }
+    ],
+
+    March: [
+        {
+            name: "Spring Farmers Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "m1.png"
+        },
+        {
+            name: "Meadow Fresh Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "m2.png"
+        },
+        {
+            name: "Garden Harvest Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "m3.png"
+        }
+    ],
+
+    April: [
+        {
+            name: "Bloomfield Farmers Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "m4.png"
+        },
+        {
+            name: "Fresh Garden Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "m5.png"
+        },
+        {
+            name: "Green Acres Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "m6.png"
+        }
+    ],
+
+    May: [
+        {
+            name: "Sunny Meadow Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "m7.png"
+        },
+        {
+            name: "Fresh Valley Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "m8.png"
+        },
+        {
+            name: "Green Basket Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "m9.png"
+        }
+    ],
+
+    June: [
+        {
+            name: "Summer Fresh Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "s1.png"
+        },
+        {
+            name: "Sunny Harvest Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "s2.png"
+        },
+        {
+            name: "Green Summer Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "s3.png"
+        }
+    ],
+
+    July: [
+        {
+            name: "Summer Grove Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "s4.png"
+        },
+        {
+            name: "Fresh Fields Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "s5.png"
+        },
+        {
+            name: "Sunny Farm Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "s6.png"
+        }
+    ],
+
+    August: [
+        {
+            name: "Harvest Hills Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "s7.png"
+        },
+        {
+            name: "Summer Harvest Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "s8.png"
+        },
+        {
+            name: "Fresh Valley Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "s9.png"
+        }
+    ],
+
+    September: [
+        {
+            name: "Riverside Farmers Market",
+            day: "Wednesday",
+            time: "8:00 AM - 2:00 PM",
+            image: "img1.png"
+        },
+        {
+            name: "Maple Grove Market",
+            day: "Wednesday",
+            time: "8:00 AM - 3:00 PM",
+            image: "img2.png"
+        },
+        {
+            name: "Sunnyvale Farmers Market",
+            day: "Sunday",
+            time: "8:00 AM - 1:00 PM",
+            image: "img3.png"
+        }
+    ],
+
+    October: [
+        {
+            name: "Autumn Harvest Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "img4.png"
+        },
+        {
+            name: "Pumpkin Valley Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "img5.png"
+        },
+        {
+            name: "Fall Fresh Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "img6.png"
+        }
+    ],
+
+    November: [
+        {
+            name: "Harvest Corner Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "img7.png"
+        },
+        {
+            name: "Golden Fields Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "img8.png"
+        },
+        {
+            name: "Autumn Valley Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image:"img4.png"
+        }
+    ],
+
+    December: [
+        {
+            name: "Winter Harvest Market",
+            day: "Saturday",
+            time: "8:00 AM - 2:00 PM",
+            image: "img9.png"
+        },
+        {
+            name: "Holiday Fresh Market",
+            day: "Sunday",
+            time: "9:00 AM - 3:00 PM",
+            image: "img10.png"
+        },
+        {
+            name: "Winter Valley Market",
+            day: "Wednesday",
+            time: "8:00 AM - 1:00 PM",
+            image: "img11.png"
+        }
+    ]
+
+};
+
+
+    const months = Object.keys(seasonalData);
+
+    let currentMonth = 8;
+
+
+    const monthName =
+        document.querySelector(".month-selector h2");
+
+    const leftArrow =
+        document.querySelector(".month-selector .month-arrow:first-child");
+
+    const rightArrow =
+        document.querySelector(".month-selector .month-arrow:last-child");
+
+    const cards =
+        document.querySelectorAll(".produce-card");
+
+    const sectionDescription =
+        document.querySelector(".section-heading p");
+
+        const marketMonth =
+    document.querySelector("#marketMonth");
+
+const marketCards =
+    document.querySelectorAll(".market-card");
+
+
+    function updateSeasonalProducts() {
+
+        const month = months[currentMonth];
+
+        const products = seasonalData[month];
+
+
+        monthName.textContent = month;
+
+
+        sectionDescription.textContent =
+            `Fresh produce that's at its best this ${month}.`;
+
+
+        cards.forEach(function(card, index) {
+
+            const product = products[index];
+
+            card.querySelector("img").src = product.image;
+
+            card.querySelector("img").alt =
+                `Fresh ${product.name}`;
+
+            card.querySelector("h3").textContent =
+                product.name;
+
+            card.querySelector("p").textContent =
+                product.description;
+
+        });
+
+        const markets = marketData[month];
+
+marketMonth.textContent = month;
+
+marketCards.forEach(function(card, index) {
+
+    const market = markets[index];
+
+    card.querySelector("img").src = market.image;
+
+    card.querySelector("img").alt = market.name;
+
+    card.querySelector("h3").textContent = market.name;
+
+    card.querySelector("p").innerHTML =
+        `<i class="fa-regular fa-clock"></i> ${market.day} • ${market.time}`;
+
+});
+
+    }
+
+
+    rightArrow.addEventListener("click", function() {
+
+        currentMonth++;
+
+        if (currentMonth > 11) {
+            currentMonth = 0;
+        }
+
+        updateSeasonalProducts();
+
+    });
+
+
+    leftArrow.addEventListener("click", function() {
+
+        currentMonth--;
+
+        if (currentMonth < 0) {
+            currentMonth = 11;
+        }
+
+        updateSeasonalProducts();
+
+    });
+    updateSeasonalProducts();
+
+
+</script>
+
+
+ <footer class="site-footer">
+    <div class="footer-leaf footer-leaf-left"></div>
+    <div class="footer-leaf footer-leaf-right"></div>
+
+    <div class="footer-container">
+
+
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">
+    <i class="fa-solid fa-leaf"></i>
+
+    <div class="footer-logo-text">
+        <h2>FreshFind</h2>
+        <span>Green Basket • Fresh Life</span>
+    </div>
+</div>
+
+                <p class="footer-description">
+                    Fresh produce. Local markets.<br>
+                    Right around you.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#"><span>›</span> Home</a></li>
+                    <li><a href="#"><span>›</span> Market Directory</a></li>
+                    <li><a href="#"><span>›</span> Produce Guide</a></li>
+                    <li><a href="#"><span>›</span> Seasonal</a></li>
+                    <li><a href="#"><span>›</span> Chatbot</a></li>
+                    <li><a href="#"><span>›</span> Contact Us</a></li>
+                    <li><a href="#"><span>›</span> About Us</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-column contact-column">
+
+                <h3>Contact Info</h3>
+
+                <ul class="contact-list">
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Karachi, Pakistan</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+92 21 1234 5678</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@freshfind.pk</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mon – Sun | 8:00 AM – 8:00 PM</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-newsletter">
+
+                <h3>Stay Updated</h3>
+
+                <p>
+                    Get the latest market updates,<br>
+                    seasonal picks and more.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 FreshFind. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms of Service</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+ <!-- =====================================================
+     FLOATING CHATBOT BUTTON
+===================================================== -->
+<a
+    href="chat.html.html"
+    class="floating-bot"
+    aria-label="Open FreshBot">
+
+    <i class="fa-solid fa-robot"></i>
+
+    <span></span>
+
+</a>
+<!-- ======================================
+     FRESHFIND LOGIN / SIGNUP MODAL
+====================================== -->
+
+<div class="auth-overlay" id="authOverlay">
+
+    <div class="auth-modal" role="dialog"
+         aria-modal="true"
+         aria-labelledby="authHeading">
+
+        <!-- CLOSE BUTTON -->
+        <button type="button"
+                class="auth-close"
+                id="authClose"
+                aria-label="Close login form">
+            &times;
+        </button>
+
+        <!-- LEFT GREEN PANEL -->
+        <div class="auth-left">
+
+            <div class="auth-brand">
+
+                <i class="fa-solid fa-leaf"></i>
+
+                <div>
+                    <h2>FreshFind</h2>
+                    <p>Green Basket • Fresh Life</p>
+                </div>
+
+            </div>
+
+            <div class="auth-promo">
+
+                <h1>
+                    Fresh Produce,<br>
+                    <em>Healthier You</em>
+                </h1>
+
+                <p>
+                    Discover fresh markets, quality produce
+                    and support local farmers — all in one place.
+                </p>
+
+            </div>
+
+            <div class="auth-benefits">
+
+                <div class="auth-benefit">
+                    <span><i class="fa-solid fa-leaf"></i></span>
+                    <div>
+                        <h4>Fresh & Local</h4>
+                        <p>Support local farmers</p>
+                    </div>
+                </div>
+
+                <div class="auth-benefit">
+                    <span><i class="fa-solid fa-shield-halved"></i></span>
+                    <div>
+                        <h4>Quality Assured</h4>
+                        <p>Fresh and safe produce</p>
+                    </div>
+                </div>
+
+                <div class="auth-benefit">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <div>
+                        <h4>Find Nearby Markets</h4>
+                        <p>Explore markets in your area</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="auth-vegetables">
+                <i class="fa-solid fa-carrot"></i>
+                <i class="fa-solid fa-apple-whole"></i>
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+        </div>
+
+        <!-- RIGHT FORM PANEL -->
+        <div class="auth-right">
+
+            <!-- LOGIN / SIGNUP TABS -->
+            <div class="auth-tabs">
+
+                <button type="button"
+                        class="auth-tab active"
+                        id="loginTab">
+                    Login
+                </button>
+
+                <button type="button"
+                        class="auth-tab"
+                        id="signupTab">
+                    Sign Up
+                </button>
+
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form class="auth-form active"
+                  id="loginForm">
+
+                <div class="auth-heading">
+
+                    <h2 id="authHeading">
+                        Welcome Back!
+                    </h2>
+
+                    <p>
+                        Login to your account to continue shopping.
+                    </p>
+
+                </div>
+
+                <label for="loginEmail">
+                    Email Address
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Password"
+                        autocomplete="current-password"
+                        required
+                        minlength="6"
+                    >
+
+                    <button type="button"
+                            class="password-toggle"
+                            data-target="loginPassword"
+                            aria-label="Show password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+
+                </div>
+
+                <div class="auth-options">
+
+                    <label class="remember-label">
+                        <input type="checkbox"
+                               id="rememberMe">
+                        Remember me
+                    </label>
+
+                    <button type="button"
+                            class="forgot-password"
+                            id="forgotPassword">
+                        Forgot password?
+                    </button>
+
+                </div>
+
+                <button type="submit"
+                        class="auth-submit">
+                    Login
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="auth-divider">
+                    <span>or continue with</span>
+                </div>
+
+                <button type="button"
+                        class="social-login"
+                        id="googleLogin">
+                    <i class="fa-brands fa-google"></i>
+                    Continue with Google
+                </button>
+
+                <button type="button"
+                        class="social-login"
+                        id="appleLogin">
+                    <i class="fa-brands fa-apple"></i>
+                    Continue with Apple
+                </button>
+
+                <p class="auth-switch-text">
+                    Don't have an account?
+                    <button type="button"
+                            data-switch="signup">
+                        Sign Up
+                    </button>
+                </p>
+
+            </form>
+
+            <!-- SIGN UP FORM -->
+            <form class="auth-form"
+                  id="signupForm">
+
+                <div class="auth-heading">
+
+                    <h2>Create Account!</h2>
+
+                    <p>
+                        Join FreshFind and discover fresh local markets.
+                    </p>
+
+                </div>
+
+                <label for="signupName">
+                    Full Name
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-regular fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="signupName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                        minlength="2"
+                    >
+
+                </div>
+
+                <label for="signupEmail">
+                    Email Address
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <label for="signupPassword">
+                    Create Password
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="At least 8 characters"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                    <button type="button"
+                            class="password-toggle"
+                            data-target="signupPassword"
+                            aria-label="Show password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+
+                </div>
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                </div>
+
+                <label class="terms-label">
+
+                    <input type="checkbox"
+                           id="acceptTerms"
+                           required>
+
+                    <span>
+                        I agree to the Terms & Conditions
+                    </span>
+
+                </label>
+
+                <button type="submit"
+                        class="auth-submit">
+                    Create Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="auth-switch-text">
+                    Already have an account?
+                    <button type="button"
+                            data-switch="login">
+                        Login
+                    </button>
+                </p>
+
+            </form>
+
+            <!-- STATUS MESSAGE -->
+            <div class="auth-message"
+                 id="authMessage"
+                 role="status"
+                 aria-live="polite">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    
+
+<!-- NAVBAR SEARCH JAVASCRIPT -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchToggle = document.getElementById("searchToggle");
+    const searchBox = document.getElementById("navbarSearchBox");
+    const searchInput = document.getElementById("navbarSearchInput");
+    const searchClose = document.getElementById("searchClose");
+    const searchForm = document.getElementById("navbarSearchForm");
+    const searchResults = document.getElementById("navbarSearchResults");
+
+
+    /* PRODUCTS */
+
+    const products = [
+
+        {
+            name: "Fresh Tomatoes",
+            category: "Vegetables",
+            price: "Rs. 450 /kg",
+            image: "tomato.png"
+        },
+
+        {
+            name: "Green Lettuce",
+            category: "Leafy Greens",
+            price: "Rs. 80 /piece",
+            image: "lettuce.png"
+        },
+
+        {
+            name: "Banana",
+            category: "Fruits",
+            price: "Rs. 280 /kg",
+            image: "banana.png"
+        },
+
+
+        
+    // MARKET SEARCH DATA
+
+    {
+        name: "Clifton Farmers Market",
+        category: "Clifton, Karachi",
+        price: "Market",
+        image: "market1.png"
+    },
+
+    {
+        name: "DHA Farmers Market",
+        category: "DHA Phase 6, Karachi",
+        price: "Market",
+        image: "market2.png"
+    },
+
+    {
+        name: "Gulshan Farmers Market",
+        category: "Gulshan-e-Iqbal, Karachi",
+        price: "Market",
+        image: "market3.png"
+    },
+
+    {
+        name: "North Nazimabad Market",
+        category: "North Nazimabad, Karachi",
+        price: "Market",
+        image: "market4.png"
+    },
+
+    {
+        name: "PECHS Farmers Market",
+        category: "PECHS, Karachi",
+        price: "Market",
+        image: "market5.png"
+    },
+
+    {
+        name: "Bahadurabad Market",
+        category: "Bahadurabad, Karachi",
+        price: "Market",
+        image: "market6.png"
+    }
+    ];
+
+
+    /* OPEN SEARCH */
+
+    searchToggle.addEventListener("click", function () {
+
+        searchBox.classList.add("show");
+
+        searchInput.focus();
+
+    });
+
+
+    /* CLOSE SEARCH */
+
+    searchClose.addEventListener("click", function () {
+
+        searchBox.classList.remove("show");
+
+        searchResults.classList.remove("active");
+
+        searchInput.value = "";
+
+    });
+
+
+    /* SEARCH */
+
+    searchInput.addEventListener("input", function () {
+
+        const value =
+            searchInput.value.trim().toLowerCase();
+
+
+        if (value === "") {
+
+            searchResults.innerHTML = "";
+
+            searchResults.classList.remove("active");
+
+            return;
+
+        }
+
+
+        const matches = products.filter(function (product) {
+
+            return (
+                product.name.toLowerCase().includes(value) ||
+                product.category.toLowerCase().includes(value)
+            );
+
+        });
+
+
+        /* NO RESULT */
+
+        if (matches.length === 0) {
+
+            searchResults.innerHTML = `
+
+                <div class="navbar-no-results">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <h4>No products found</h4>
+
+                    <p>
+                        Try tomato, banana or lettuce.
+                    </p>
+
+                </div>
+
+            `;
+
+            searchResults.classList.add("active");
+
+            return;
+
+        }
+
+
+        /* RESULTS */
+
+        let html = `
+            <div class="navbar-search-heading">
+                Search Results
+            </div>
+        `;
+
+
+        matches.forEach(function (product) {
+
+            html += `
+
+                <div
+                    class="navbar-search-result"
+                    data-product="${product.name}"
+                >
+
+                    <img
+                        src="${product.image}"
+                        alt="${product.name}"
+                    >
+
+                    <div class="navbar-search-info">
+
+                        <h4>${product.name}</h4>
+
+                        <p>${product.category}</p>
+
+                        <span class="navbar-search-price">
+                            ${product.price}
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right navbar-search-arrow"></i>
+
+                </div>
+
+            `;
+
+        });
+
+
+        searchResults.innerHTML = html;
+
+        searchResults.classList.add("active");
+
+    });
+
+
+    /* ENTER */
+
+    searchForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+    });
+
+
+    /* OUTSIDE CLICK */
+
+    document.addEventListener("click", function (event) {
+
+        if (
+            !searchBox.contains(event.target) &&
+            !searchToggle.contains(event.target)
+        ) {
+
+            searchBox.classList.remove("show");
+
+            searchResults.classList.remove("active");
+
+        }
+
+    });
+
+});
+
+</script>
+
+<script>
+
+const wishlistBtn = document.getElementById("wishlistBtn");
+const wishlistPopup = document.getElementById("wishlistPopup");
+const wishlistClose = document.getElementById("wishlistClose");
+
+wishlistBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+
+    wishlistPopup.classList.toggle("active");
+});
+
+wishlistClose.addEventListener("click", function () {
+    wishlistPopup.classList.remove("active");
+});
+
+document.addEventListener("click", function (e) {
+
+    if (
+        !wishlistPopup.contains(e.target) &&
+        !wishlistBtn.contains(e.target)
+    ) {
+        wishlistPopup.classList.remove("active");
+    }
+
+});
+
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const overlay = document.getElementById("authOverlay");
+
+    const openLogin = document.getElementById("openLogin");
+    const openSignup = document.getElementById("openSignup");
+    const closeBtn = document.getElementById("authClose");
+
+    const loginTab = document.getElementById("loginTab");
+    const signupTab = document.getElementById("signupTab");
+
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+
+    const authMessage = document.getElementById("authMessage");
+
+    let previousFocus = null;
+
+    // OPEN MODAL
+    function openModal(type) {
+
+        previousFocus = document.activeElement;
+
+        overlay.classList.add("active");
+        document.body.classList.add("auth-open");
+
+        switchForm(type);
+
+        closeBtn.focus();
+    }
+
+    // CLOSE MODAL
+    function closeModal() {
+
+        overlay.classList.remove("active");
+        document.body.classList.remove("auth-open");
+
+        clearMessage();
+
+        if (previousFocus) {
+            previousFocus.focus();
+        }
+    }
+
+    // SWITCH LOGIN / SIGNUP
+    function switchForm(type) {
+
+        const isLogin = type === "login";
+
+        loginForm.classList.toggle("active", isLogin);
+        signupForm.classList.toggle("active", !isLogin);
+
+        loginTab.classList.toggle("active", isLogin);
+        signupTab.classList.toggle("active", !isLogin);
+
+        loginTab.setAttribute("aria-selected", isLogin);
+        signupTab.setAttribute("aria-selected", !isLogin);
+
+        clearMessage();
+    }
+
+    // STATUS MESSAGE
+    function showMessage(message, type) {
+
+        authMessage.textContent = message;
+
+        authMessage.className =
+            "auth-message show " + type;
+    }
+
+    function clearMessage() {
+
+        authMessage.textContent = "";
+        authMessage.className = "auth-message";
+    }
+
+    // NAVBAR BUTTONS
+    openLogin.addEventListener("click", function () {
+        openModal("login");
+    });
+
+    openSignup.addEventListener("click", function () {
+        openModal("signup");
+    });
+
+    // CLOSE BUTTON
+    closeBtn.addEventListener("click", closeModal);
+
+    // CLICK OUTSIDE MODAL
+    overlay.addEventListener("click", function (event) {
+
+        if (event.target === overlay) {
+            closeModal();
+        }
+
+    });
+
+    // ESCAPE KEY
+    document.addEventListener("keydown", function (event) {
+
+        if (
+            event.key === "Escape" &&
+            overlay.classList.contains("active")
+        ) {
+            closeModal();
+        }
+
+    });
+
+    // TAB SWITCHING
+    loginTab.addEventListener("click", function () {
+        switchForm("login");
+    });
+
+    signupTab.addEventListener("click", function () {
+        switchForm("signup");
+    });
+
+    // SWITCH LINKS INSIDE FORMS
+    document.querySelectorAll("[data-switch]").forEach(function (button) {
+
+        button.addEventListener("click", function () {
+            switchForm(button.dataset.switch);
+        });
+
+    });
+
+    // SHOW / HIDE PASSWORD
+    document.querySelectorAll(".password-toggle").forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const input = document.getElementById(
+                button.dataset.target
+            );
+
+            const icon = button.querySelector("i");
+
+            if (input.type === "password") {
+
+                input.type = "text";
+
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+
+                button.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+            } else {
+
+                input.type = "password";
+
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+
+                button.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+            }
+
+        });
+
+    });
+
+    // LOGIN FORM
+    loginForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        if (!loginForm.checkValidity()) {
+            loginForm.reportValidity();
+            return;
+        }
+
+        showMessage(
+            "Form validation successful. Real login requires connecting a secure authentication backend.",
+            "success"
+        );
+
+    });
+
+    // SIGNUP FORM
+    signupForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        if (!signupForm.checkValidity()) {
+            signupForm.reportValidity();
+            return;
+        }
+
+        const password =
+            document.getElementById("signupPassword").value;
+
+        const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+        if (password !== confirmPassword) {
+
+            showMessage(
+                "Passwords do not match. Please check both password fields.",
+                "error"
+            );
+
+            return;
+        }
+
+        showMessage(
+            "Form validation successful. To create a real account, connect a secure backend.",
+            "success"
+        );
+
+    });
+
+    // FORGOT PASSWORD
+    document.getElementById("forgotPassword")
+        .addEventListener("click", function () {
+
+            showMessage(
+                "Password recovery will work after you connect an authentication backend.",
+                "error"
+            );
+
+        });
+
+    // SOCIAL LOGIN PLACEHOLDERS
+    document.getElementById("googleLogin")
+        .addEventListener("click", function () {
+
+            showMessage(
+                "Google sign-in requires Google authentication setup.",
+                "error"
+            );
+
+        });
+
+    document.getElementById("appleLogin")
+        .addEventListener("click", function () {
+
+            showMessage(
+                "Apple sign-in requires Apple authentication setup.",
+                "error"
+            );
+
+        });
+
+});
+</script>
+
+</body>
+
+</html>

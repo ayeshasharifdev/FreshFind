@@ -1,0 +1,2236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshFind</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+   
+    <link rel="stylesheet" href="./chat.css.css">
+   
+    
+
+</head>
+
+<body>
+
+    <div class="hero-wrapper">
+
+
+        <nav class="navbar navbar-expand-lg fresh-navbar">
+
+            <div class="container-fluid navbar-container">
+
+            
+                <a href="#" class="navbar-brand fresh-logo">
+
+                    <div class="leaf-logo">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <div class="logo-text">
+                        <span class="brand-name">FreshFind</span>
+
+                        <span class="brand-tagline">
+                            Green Basket • Fresh Life
+                        </span>
+                    </div>
+
+                </a>
+
+                <button
+                    class="navbar-toggler menu-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#freshNavbar"
+                    aria-controls="freshNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+         
+                <div class="collapse navbar-collapse" id="freshNavbar">
+
+             
+                    <ul class="navbar-nav mx-auto fresh-nav-links">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fa-solid fa-house"></i>
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="MD.html">
+                                Market Directory
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="produce guide (2).html">
+                                Produce Guide
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="seasonal rec.html">
+                                Seasonal
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="chat.html.html">
+                                Chatbot
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">
+                                About Us
+                            </a>
+                        </li>
+
+                    </ul>
+    
+                    <div class="navbar-right">
+            
+                <button type="button"
+                        class="nav-icon search-toggle"
+                        id="searchToggle"
+                        aria-label="Open search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+<div class="wishlist-wrapper">
+
+    <button class="wishlist-btn" id="wishlistBtn" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span class="wishlist-count">3</span>
+    </button>
+    <div class="wishlist-popup" id="wishlistPopup">
+
+        <div class="wishlist-header">
+            <div>
+                <h2>
+                    <i class="fa-solid fa-heart"></i>
+                    My Wishlist
+                </h2>
+                <p>3 items saved for later</p>
+            </div>
+
+            <button class="wishlist-close" id="wishlistClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="wishlist-item">
+
+            <img src="tomato.png" alt="Fresh Tomatoes">
+
+            <div class="wishlist-info">
+                <h3>Fresh Tomatoes</h3>
+                <p>Vegetables</p>
+                <strong>Rs. 450 <small>/kg</small></strong>
+
+                <button class="add-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <button class="remove-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+
+        </div>
+        <div class="wishlist-item">
+
+            <img src="lettuce.png" alt="Green Lettuce">
+
+            <div class="wishlist-info">
+                <h3>Green Lettuce</h3>
+                <p>Leafy Greens</p>
+                <strong>Rs. 80 <small>/piece</small></strong>
+
+                <button class="add-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <button class="remove-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+
+        </div>
+
+        <div class="wishlist-item">
+
+            <img src="banana.png" alt="Banana">
+
+            <div class="wishlist-info">
+                <h3>Banana</h3>
+                <p>Fruits</p>
+                <strong>Rs. 280 <small>/kg</small></strong>
+
+                <button class="add-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+            </div>
+
+            <button class="remove-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+            </button>
+
+        </div>
+        <div class="wishlist-footer">
+
+            <button class="clear-wishlist">
+                <i class="fa-regular fa-trash-can"></i>
+                Clear Wishlist
+            </button>
+
+            <button class="view-wishlist">
+                View All
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<button type="button"
+        class="login-btn"
+        id="openLogin">
+    Login
+</button>
+<button type="button"
+        class="signup-btn"
+        id="openSignup">
+    Sign Up
+</button>
+                
+<div class="navbar-search-wrapper">
+    <div class="navbar-search-box" id="navbarSearchBox">
+
+        <form class="navbar-search-form" id="navbarSearchForm">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="navbarSearchInput"
+                placeholder="Search markets, produce or area..."
+                autocomplete="off"
+            >
+
+            <button type="button"
+                    class="search-close"
+                    id="searchClose">
+                &times;
+            </button>
+
+        </form>
+        <div class="navbar-search-results" id="navbarSearchResults">
+        </div>
+
+    </div>
+
+</div>
+            </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+<main>
+<section class="hero hero-banner" id="home">
+
+    <img
+        src="WhatsApp Image 2026-09-25 at 1.17.58 AM.jpeg"
+        alt="FreshFind FreshBot"
+        class="hero-background"
+    >
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <div class="hero-copy">
+
+            <div class="eyebrow">
+
+                <span class="bot-title-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </span>
+
+                AI Chatbot
+
+                <span class="eyebrow-line"></span>
+
+            </div>
+
+
+            <h1>
+                Have Questions?
+                <br>
+                <span>FreshBot is Here!</span>
+            </h1>
+
+
+            <p>
+                Ask anything about local farmers’ markets,
+                seasonal produce, opening hours, and more.
+                Our friendly AI assistant is always ready
+                to help you find what you need.
+            </p>
+
+
+            <div class="hero-features">
+
+                <div class="hero-feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div>
+                        <strong>Instant Answers</strong>
+
+                        <small>
+                            Get quick & helpful responses.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <div>
+                        <strong>Fresh Data</strong>
+
+                        <small>
+                            Local market & produce information.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div>
+                        <strong>Helpful Guidance</strong>
+
+                        <small>
+                            Find the right market for you.
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="hero-bot-card">
+
+            <div class="bot-card-top">
+
+                <div class="hero-bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+
+                <div>
+                    <h3>FreshBot</h3>
+
+                    <span>
+                        <b></b>
+                        Online
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="bot-card-message">
+
+                <span class="quote-mark">“</span>
+
+                <p>
+                    Your friendly guide to
+                    <strong>fresh produce</strong>,
+                    local markets & seasonal picks.
+                </p>
+
+            </div>
+
+
+            <div class="bot-card-bottom">
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Karachi
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-leaf"></i>
+                    Fresh & Local
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="chat-section"
+    id="chatbot">
+
+    <div class="questions-column">
+
+
+        <div class="section-heading">
+
+
+            <span class="heading-leaf">
+
+                <i class="fa-solid fa-leaf"></i>
+
+            </span>
+
+
+            <div>
+
+                <h2>
+                    Quick Questions
+                </h2>
+
+                <p>
+                    Click on a question below to get
+                    started, or type your own!
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div
+            class="quick-list"
+            id="quickList">
+
+
+            <button
+                class="quick-question"
+                data-question="Which markets are open today?">
+
+                <span class="q-icon">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                </span>
+
+                <span>
+                    Which markets are open today?
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+
+            <button
+                class="quick-question"
+                data-question="Find markets near DHA Karachi">
+
+                <span class="q-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </span>
+
+                <span>
+                    Find markets near DHA Karachi
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+
+            <button
+                class="quick-question"
+                data-question="What's in season in September?">
+
+                <span class="q-icon">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                </span>
+
+                <span>
+                    What's in season in September?
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+
+            <button
+                class="quick-question"
+                data-question="Show me all vegetable markets">
+
+                <span class="q-icon">
+
+                    <i class="fa-solid fa-carrot"></i>
+
+                </span>
+
+                <span>
+                    Show me all vegetable markets
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+
+            <button
+                class="quick-question"
+                data-question="Where can I buy fresh strawberries?">
+
+                <span class="q-icon">
+
+                    <i class="fa-solid fa-apple-whole"></i>
+
+                </span>
+
+                <span>
+                    Where can I buy fresh strawberries?
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+
+            <button
+                class="quick-question"
+                data-question="What are the market timings?">
+
+                <span class="q-icon">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                </span>
+
+                <span>
+                    What are the market timings?
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+        </div>
+
+        <div
+            class="topics-box"
+            id="market-directory">
+
+
+            <div class="topics-title">
+
+
+                <span>
+
+                    <i class="fa-regular fa-lightbulb"></i>
+
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Popular Topics
+                    </h3>
+
+                    <p>
+                        Explore common topics people ask about
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="topic-grid">
+
+
+                <a
+                    href="#"
+                    class="topic-card">
+
+                    <i class="fa-solid fa-shop"></i>
+
+                    <strong>
+                        Markets
+                    </strong>
+
+                    <span>
+                        Locations, hours,
+                        <br>
+                        and more.
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#seasonal"
+                    class="topic-card">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <strong>
+                        Seasonal Produce
+                    </strong>
+
+                    <span>
+                        What's fresh
+                        <br>
+                        this season?
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#"
+                    class="topic-card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <strong>
+                        Nearby Markets
+                    </strong>
+
+                    <span>
+                        Find markets
+                        <br>
+                        close to you.
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#produce-guide"
+                    class="topic-card">
+
+                    <i class="fa-solid fa-basket-shopping"></i>
+
+                    <strong>
+                        Product Guide
+                    </strong>
+
+                    <span>
+                        Learn about fruits,
+                        <br>
+                        vegetables & more.
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#"
+                    class="topic-card">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <strong>
+                        Bookmarking
+                    </strong>
+
+                    <span>
+                        Save your favorites
+                        <br>
+                        (session only).
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#"
+                    class="topic-card">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <strong>
+                        Contact & About
+                    </strong>
+
+                    <span>
+                        Get in touch or
+                        <br>
+                        learn about us.
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div
+        class="chatbot-card"
+        id="chatbotCard">
+
+
+        <div class="chat-header">
+
+
+            <div class="bot-avatar">
+
+                <i class="fa-solid fa-robot"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    FreshBot
+                </h3>
+
+                <span>
+
+                    <b></b>
+
+                    Online
+
+                </span>
+
+            </div>
+
+
+            <div class="chat-controls">
+
+
+                <button
+                    id="minimizeChat"
+                    aria-label="Minimize">
+
+                    <i class="fa-solid fa-minus"></i>
+
+                </button>
+
+
+                <button
+                    id="closeChat"
+                    aria-label="Close">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+        <div
+            class="chat-body"
+            id="chatBody">
+
+            <div class="message bot">
+
+
+                <div class="mini-avatar">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                </div>
+
+
+                <div>
+
+                    <div class="bubble">
+
+                        Hi! 👋 I’m FreshBot.
+
+                        <br><br>
+
+                        I can help you find information
+                        about farmers’ markets,
+                        seasonal produce,
+                        market timings and more
+                        in Karachi.
+
+                        <br><br>
+
+                        What would you like to know?
+
+                    </div>
+
+
+                    <time>
+                        10:24 AM
+                    </time>
+
+                </div>
+
+
+            </div>
+
+            <div
+                class="message user hidden"
+                id="demoUserMessage">
+
+
+                <div class="bubble">
+
+                    Which markets are open today?
+
+                </div>
+
+
+                <time>
+                    10:25 AM
+                </time>
+
+
+            </div>
+            <div
+                class="message bot hidden"
+                id="demoBotMessage">
+
+
+                <div class="mini-avatar">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                </div>
+
+
+                <div>
+
+
+                    <div class="bubble market-bubble">
+
+
+                        Here are the farmers’
+                        markets open today in Karachi:
+
+                        <div class="market-item">
+
+                            <span class="open">
+                                OPEN
+                            </span>
+
+                            <strong>
+                                Clifton Farmers Market
+                            </strong>
+
+                            <small>
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Clifton, Karachi
+
+                            </small>
+
+                            <small>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                8:00 AM – 2:00 PM
+
+                            </small>
+
+                        </div>
+                        <div class="market-item">
+
+                            <span class="open">
+                                OPEN
+                            </span>
+
+                            <strong>
+                                Gulshan Farmers Market
+                            </strong>
+
+                            <small>
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Gulshan-e-Iqbal, Karachi
+
+                            </small>
+
+                            <small>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                7:00 AM – 12:00 PM
+
+                            </small>
+
+                        </div>
+
+
+                        <div class="market-item">
+
+                            <span class="open">
+                                OPEN
+                            </span>
+
+                            <strong>
+                                Saddar Farmers Market
+                            </strong>
+
+                            <small>
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Saddar, Karachi
+
+                            </small>
+
+                            <small>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                8:00 AM – 3:00 PM
+
+                            </small>
+
+                        </div>
+
+
+
+                        <button class="view-markets">
+
+                            View All Open Markets
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <time>
+                        10:25 AM
+                    </time>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                class="typing hidden"
+                id="typing">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+        <div class="suggestions">
+
+
+            <button
+                data-question="Seasonal Produce">
+
+                Seasonal Produce
+
+            </button>
+
+
+            <button
+                data-question="Market Directory">
+
+                Market Directory
+
+            </button>
+
+
+            <button
+                data-question="Other Question">
+
+                Other Question
+
+            </button>
+
+
+        </div>
+
+        <form
+            class="chat-input"
+            id="chatForm">
+
+
+            <input
+                id="chatInput"
+                type="text"
+                placeholder="Type your question..."
+                autocomplete="off">
+
+
+            <button
+                type="submit"
+                aria-label="Send">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+</section>
+
+<section
+    class="community-strip"
+    id="seasonal">
+
+
+    <div class="community-copy">
+
+        <span>
+
+            Good Food
+            <br>
+
+            Builds Stronger
+            <br>
+
+            Communities
+
+            <i class="fa-regular fa-heart"></i>
+
+        </span>
+
+    </div>
+
+
+
+    <div class="city-art">
+
+        <div class="minaret"></div>
+
+        <div class="dome"></div>
+
+        <div class="cityline"></div>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+<section class="info-panels">
+
+
+    <div
+        class="info-panel"
+        id="produce-guide">
+
+
+        <div>
+
+            <span class="panel-icon">
+
+                <i class="fa-solid fa-carrot"></i>
+
+            </span>
+
+
+            <h2>
+                Fresh Produce Guide
+            </h2>
+
+
+            <p>
+
+                Explore quick information about
+                fruits and vegetables, their seasonal
+                availability, and smart ways to
+                choose fresh produce.
+
+            </p>
+
+        </div>
+
+
+        <button
+            class="panel-chat-btn"
+            data-question="What's in season in September?">
+
+            Ask FreshBot
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+    </div>
+
+    <div
+        class="info-panel"
+        id="about">
+
+
+        <div>
+
+            <span class="panel-icon">
+
+                <i class="fa-solid fa-leaf"></i>
+
+            </span>
+
+
+            <h2>
+                About FreshFind
+            </h2>
+
+
+            <p>
+
+                FreshFind connects people with
+                local farmers’ markets and useful
+                fresh-produce information in one
+                simple place.
+
+            </p>
+
+        </div>
+
+
+        <button
+            class="panel-chat-btn"
+            data-question="Tell me about FreshFind">
+
+            Learn More
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+    </div>
+
+    <div
+        class="info-panel"
+        id="contact">
+
+
+        <div>
+
+            <span class="panel-icon">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </span>
+
+
+            <h2>
+                Contact FreshFind
+            </h2>
+
+
+            <p>
+
+                Have a question or suggestion?
+                Use the chatbot or contact the
+                FreshFind team through the
+                information below.
+
+            </p>
+
+        </div>
+
+
+        <a
+            class="panel-chat-btn"
+            href="mailto:hello@freshfind.pk">
+
+            Email Us
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+<footer class="site-footer">
+    <div class="footer-leaf footer-leaf-left"></div>
+    <div class="footer-leaf footer-leaf-right"></div>
+
+    <div class="footer-container">
+
+
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">
+    <i class="fa-solid fa-leaf"></i>
+
+    <div class="footer-logo-text">
+        <h2>FreshFind</h2>
+        <span>Green Basket • Fresh Life</span>
+    </div>
+</div>
+
+                <p class="footer-description">
+                    Fresh produce. Local markets.<br>
+                    Right around you.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="https://www.facebook.com/login/" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/login" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/login/" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html"><span>›</span> Home</a></li>
+                    <li><a href="#"><span>›</span> Market Directory</a></li>
+                    <li><a href="#"><span>›</span> Produce Guide</a></li>
+                    <li><a href="#"><span>›</span> Seasonal</a></li>
+                    <li><a href="chat.html.html"><span>›</span> Chatbot</a></li>
+                    <li><a href="contact.html"><span>›</span> Contact Us</a></li>
+                    <li><a href="aboutus.html"><span>›</span> About Us</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-column contact-column">
+
+                <h3>Contact Info</h3>
+
+                <ul class="contact-list">
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Karachi, Pakistan</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+92 21 1234 5678</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@freshfind.pk</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mon – Sun | 8:00 AM – 8:00 PM</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-newsletter">
+
+                <h3>Stay Updated</h3>
+
+                <p>
+                    Get the latest market updates,<br>
+                    seasonal picks and more.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 FreshFind. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms of Service</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<button
+    class="floating-bot"
+    id="floatingBot"
+    aria-label="Open FreshBot">
+
+
+    <i class="fa-solid fa-robot"></i>
+
+
+    <span></span>
+
+
+</button>
+
+<div class="auth-overlay" id="authOverlay">
+
+    <div class="auth-modal" role="dialog"
+         aria-modal="true"
+         aria-labelledby="authHeading">
+
+        <button type="button"
+                class="auth-close"
+                id="authClose"
+                aria-label="Close login form">
+            &times;
+        </button>
+
+        <div class="auth-left">
+
+            <div class="auth-brand">
+
+                <i class="fa-solid fa-leaf"></i>
+
+                <div>
+                    <h2>FreshFind</h2>
+                    <p>Green Basket • Fresh Life</p>
+                </div>
+
+            </div>
+
+            <div class="auth-promo">
+
+                <h1>
+                    Fresh Produce,<br>
+                    <em>Healthier You</em>
+                </h1>
+
+                <p>
+                    Discover fresh markets, quality produce
+                    and support local farmers — all in one place.
+                </p>
+
+            </div>
+
+            <div class="auth-benefits">
+
+                <div class="auth-benefit">
+                    <span><i class="fa-solid fa-leaf"></i></span>
+                    <div>
+                        <h4>Fresh & Local</h4>
+                        <p>Support local farmers</p>
+                    </div>
+                </div>
+
+                <div class="auth-benefit">
+                    <span><i class="fa-solid fa-shield-halved"></i></span>
+                    <div>
+                        <h4>Quality Assured</h4>
+                        <p>Fresh and safe produce</p>
+                    </div>
+                </div>
+
+                <div class="auth-benefit">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <div>
+                        <h4>Find Nearby Markets</h4>
+                        <p>Explore markets in your area</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="auth-vegetables">
+                <i class="fa-solid fa-carrot"></i>
+                <i class="fa-solid fa-apple-whole"></i>
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+        </div>
+
+        <div class="auth-right">
+            <div class="auth-tabs">
+
+                <button type="button"
+                        class="auth-tab active"
+                        id="loginTab">
+                    Login
+                </button>
+
+                <button type="button"
+                        class="auth-tab"
+                        id="signupTab">
+                    Sign Up
+                </button>
+
+            </div>
+            <form class="auth-form active"
+                  id="loginForm">
+
+                <div class="auth-heading">
+
+                    <h2 id="authHeading">
+                        Welcome Back!
+                    </h2>
+
+                    <p>
+                        Login to your account to continue shopping.
+                    </p>
+
+                </div>
+
+                <label for="loginEmail">
+                    Email Address
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Password"
+                        autocomplete="current-password"
+                        required
+                        minlength="6"
+                    >
+
+                    <button type="button"
+                            class="password-toggle"
+                            data-target="loginPassword"
+                            aria-label="Show password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+
+                </div>
+
+                <div class="auth-options">
+
+                    <label class="remember-label">
+                        <input type="checkbox"
+                               id="rememberMe">
+                        Remember me
+                    </label>
+
+                    <button type="button"
+                            class="forgot-password"
+                            id="forgotPassword">
+                        Forgot password?
+                    </button>
+
+                </div>
+
+                <button type="submit"
+                        class="auth-submit">
+                    Login
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="auth-divider">
+                    <span>or continue with</span>
+                </div>
+
+                <button type="button"
+                        class="social-login"
+                        id="googleLogin">
+                    <i class="fa-brands fa-google"></i>
+                    Continue with Google
+                </button>
+
+                <button type="button"
+                        class="social-login"
+                        id="appleLogin">
+                    <i class="fa-brands fa-apple"></i>
+                    Continue with Apple
+                </button>
+
+                <p class="auth-switch-text">
+                    Don't have an account?
+                    <button type="button"
+                            data-switch="signup">
+                        Sign Up
+                    </button>
+                </p>
+
+            </form>
+            <form class="auth-form"
+                  id="signupForm">
+
+                <div class="auth-heading">
+
+                    <h2>Create Account!</h2>
+
+                    <p>
+                        Join FreshFind and discover fresh local markets.
+                    </p>
+
+                </div>
+
+                <label for="signupName">
+                    Full Name
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-regular fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="signupName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                        minlength="2"
+                    >
+
+                </div>
+
+                <label for="signupEmail">
+                    Email Address
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <label for="signupPassword">
+                    Create Password
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="At least 8 characters"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                    <button type="button"
+                            class="password-toggle"
+                            data-target="signupPassword"
+                            aria-label="Show password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+
+                </div>
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                </div>
+
+                <label class="terms-label">
+
+                    <input type="checkbox"
+                           id="acceptTerms"
+                           required>
+
+                    <span>
+                        I agree to the Terms & Conditions
+                    </span>
+
+                </label>
+
+                <button type="submit"
+                        class="auth-submit">
+                    Create Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="auth-switch-text">
+                    Already have an account?
+                    <button type="button"
+                            data-switch="login">
+                        Login
+                    </button>
+                </p>
+
+            </form>
+            <div class="auth-message"
+                 id="authMessage"
+                 role="status"
+                 aria-live="polite">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="chat.js.js"></script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchToggle = document.getElementById("searchToggle");
+    const searchBox = document.getElementById("navbarSearchBox");
+    const searchInput = document.getElementById("navbarSearchInput");
+    const searchClose = document.getElementById("searchClose");
+    const searchForm = document.getElementById("navbarSearchForm");
+    const searchResults = document.getElementById("navbarSearchResults");
+
+
+    const products = [
+
+        {
+            name: "Fresh Tomatoes",
+            category: "Vegetables",
+            price: "Rs. 450 /kg",
+            image: "tomato.png"
+        },
+
+        {
+            name: "Green Lettuce",
+            category: "Leafy Greens",
+            price: "Rs. 80 /piece",
+            image: "lettuce.png"
+        },
+
+        {
+            name: "Banana",
+            category: "Fruits",
+            price: "Rs. 280 /kg",
+            image: "banana.png"
+        },
+
+
+    {
+        name: "Clifton Farmers Market",
+        category: "Clifton, Karachi",
+        price: "Market",
+        image: "market1.png"
+    },
+
+    {
+        name: "DHA Farmers Market",
+        category: "DHA Phase 6, Karachi",
+        price: "Market",
+        image: "market2.png"
+    },
+
+    {
+        name: "Gulshan Farmers Market",
+        category: "Gulshan-e-Iqbal, Karachi",
+        price: "Market",
+        image: "market3.png"
+    },
+
+    {
+        name: "North Nazimabad Market",
+        category: "North Nazimabad, Karachi",
+        price: "Market",
+        image: "market4.png"
+    },
+
+    {
+        name: "PECHS Farmers Market",
+        category: "PECHS, Karachi",
+        price: "Market",
+        image: "market5.png"
+    },
+
+    {
+        name: "Bahadurabad Market",
+        category: "Bahadurabad, Karachi",
+        price: "Market",
+        image: "market6.png"
+    }
+    ];
+
+
+    searchToggle.addEventListener("click", function () {
+
+        searchBox.classList.add("show");
+
+        searchInput.focus();
+
+    });
+
+    searchClose.addEventListener("click", function () {
+
+        searchBox.classList.remove("show");
+
+        searchResults.classList.remove("active");
+
+        searchInput.value = "";
+
+    });
+
+
+
+    searchInput.addEventListener("input", function () {
+
+        const value =
+            searchInput.value.trim().toLowerCase();
+
+
+        if (value === "") {
+
+            searchResults.innerHTML = "";
+
+            searchResults.classList.remove("active");
+
+            return;
+
+        }
+
+
+        const matches = products.filter(function (product) {
+
+            return (
+                product.name.toLowerCase().includes(value) ||
+                product.category.toLowerCase().includes(value)
+            );
+
+        });
+
+
+        if (matches.length === 0) {
+
+            searchResults.innerHTML = `
+
+                <div class="navbar-no-results">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <h4>No products found</h4>
+
+                    <p>
+                        Try tomato, banana or lettuce.
+                    </p>
+
+                </div>
+
+            `;
+
+            searchResults.classList.add("active");
+
+            return;
+
+        }
+
+
+        let html = `
+            <div class="navbar-search-heading">
+                Search Results
+            </div>
+        `;
+
+
+        matches.forEach(function (product) {
+
+            html += `
+
+                <div
+                    class="navbar-search-result"
+                    data-product="${product.name}"
+                >
+
+                    <img
+                        src="${product.image}"
+                        alt="${product.name}"
+                    >
+
+                    <div class="navbar-search-info">
+
+                        <h4>${product.name}</h4>
+
+                        <p>${product.category}</p>
+
+                        <span class="navbar-search-price">
+                            ${product.price}
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right navbar-search-arrow"></i>
+
+                </div>
+
+            `;
+
+        });
+
+
+        searchResults.innerHTML = html;
+
+        searchResults.classList.add("active");
+
+    });
+
+    searchForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+    });
+    document.addEventListener("click", function (event) {
+
+        if (
+            !searchBox.contains(event.target) &&
+            !searchToggle.contains(event.target)
+        ) {
+
+            searchBox.classList.remove("show");
+
+            searchResults.classList.remove("active");
+
+        }
+
+    });
+
+});
+
+</script>
+
+<script>
+
+const wishlistBtn = document.getElementById("wishlistBtn");
+const wishlistPopup = document.getElementById("wishlistPopup");
+const wishlistClose = document.getElementById("wishlistClose");
+
+wishlistBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+
+    wishlistPopup.classList.toggle("active");
+});
+
+wishlistClose.addEventListener("click", function () {
+    wishlistPopup.classList.remove("active");
+});
+
+document.addEventListener("click", function (e) {
+
+    if (
+        !wishlistPopup.contains(e.target) &&
+        !wishlistBtn.contains(e.target)
+    ) {
+        wishlistPopup.classList.remove("active");
+    }
+
+});
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const overlay = document.getElementById("authOverlay");
+
+    const openLogin = document.getElementById("openLogin");
+    const openSignup = document.getElementById("openSignup");
+    const closeBtn = document.getElementById("authClose");
+
+    const loginTab = document.getElementById("loginTab");
+    const signupTab = document.getElementById("signupTab");
+
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+
+    const authMessage = document.getElementById("authMessage");
+
+    let previousFocus = null;
+
+    function openModal(type) {
+
+        previousFocus = document.activeElement;
+
+        overlay.classList.add("active");
+        document.body.classList.add("auth-open");
+
+        switchForm(type);
+
+        closeBtn.focus();
+    }
+    function closeModal() {
+
+        overlay.classList.remove("active");
+        document.body.classList.remove("auth-open");
+
+        clearMessage();
+
+        if (previousFocus) {
+            previousFocus.focus();
+        }
+    }
+    function switchForm(type) {
+
+        const isLogin = type === "login";
+
+        loginForm.classList.toggle("active", isLogin);
+        signupForm.classList.toggle("active", !isLogin);
+
+        loginTab.classList.toggle("active", isLogin);
+        signupTab.classList.toggle("active", !isLogin);
+
+        loginTab.setAttribute("aria-selected", isLogin);
+        signupTab.setAttribute("aria-selected", !isLogin);
+
+        clearMessage();
+    }
+    function showMessage(message, type) {
+
+        authMessage.textContent = message;
+
+        authMessage.className =
+            "auth-message show " + type;
+    }
+
+    function clearMessage() {
+
+        authMessage.textContent = "";
+        authMessage.className = "auth-message";
+    }
+    openLogin.addEventListener("click", function () {
+        openModal("login");
+    });
+
+    openSignup.addEventListener("click", function () {
+        openModal("signup");
+    });
+    closeBtn.addEventListener("click", closeModal);
+
+    overlay.addEventListener("click", function (event) {
+
+        if (event.target === overlay) {
+            closeModal();
+        }
+
+    });
+    document.addEventListener("keydown", function (event) {
+
+        if (
+            event.key === "Escape" &&
+            overlay.classList.contains("active")
+        ) {
+            closeModal();
+        }
+
+    });
+    loginTab.addEventListener("click", function () {
+        switchForm("login");
+    });
+
+    signupTab.addEventListener("click", function () {
+        switchForm("signup");
+    });
+    document.querySelectorAll("[data-switch]").forEach(function (button) {
+
+        button.addEventListener("click", function () {
+            switchForm(button.dataset.switch);
+        });
+
+    });
+    document.querySelectorAll(".password-toggle").forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const input = document.getElementById(
+                button.dataset.target
+            );
+
+            const icon = button.querySelector("i");
+
+            if (input.type === "password") {
+
+                input.type = "text";
+
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+
+                button.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+            } else {
+
+                input.type = "password";
+
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+
+                button.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+            }
+
+        });
+
+    });
+    loginForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        if (!loginForm.checkValidity()) {
+            loginForm.reportValidity();
+            return;
+        }
+
+        showMessage(
+            "Form validation successful. Real login requires connecting a secure authentication backend.",
+            "success"
+        );
+
+    });
+    signupForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        if (!signupForm.checkValidity()) {
+            signupForm.reportValidity();
+            return;
+        }
+
+        const password =
+            document.getElementById("signupPassword").value;
+
+        const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+        if (password !== confirmPassword) {
+
+            showMessage(
+                "Passwords do not match. Please check both password fields.",
+                "error"
+            );
+
+            return;
+        }
+
+        showMessage(
+            "Form validation successful. To create a real account, connect a secure backend.",
+            "success"
+        );
+
+    });
+    document.getElementById("forgotPassword")
+        .addEventListener("click", function () {
+
+            showMessage(
+                "Password recovery will work after you connect an authentication backend.",
+                "error"
+            );
+
+        });
+    document.getElementById("googleLogin")
+        .addEventListener("click", function () {
+
+            showMessage(
+                "Google sign-in requires Google authentication setup.",
+                "error"
+            );
+
+        });
+
+    document.getElementById("appleLogin")
+        .addEventListener("click", function () {
+
+            showMessage(
+                "Apple sign-in requires Apple authentication setup.",
+                "error"
+            );
+
+        });
+
+});
+</script>
+
+
+</body>
+
+</html>

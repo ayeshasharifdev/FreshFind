@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coriander | FreshFind</title>
+
+<!-- Bootstrap -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
+
+<!-- Font Awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+>
+
+<!-- Google Fonts -->
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #f7fbf4;
+    color: #243c2e;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.fresh-navbar {
+    width: 100%;
+    min-height: 70px;
+    background: rgba(2, 55, 34, 0.95);
+    padding: 0;
+    position: relative;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 45px;
+    min-height: 70px;
+}
+
+.fresh-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.leaf-logo {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaf-logo i {
+    color: #a9df5b;
+    font-size: 42px;
+    transform: rotate(-18deg);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.brand-name {
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+}
+
+.brand-tagline {
+    margin-top: 4px;
+    color: #d6e8d1;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.fresh-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: auto !important;
+    margin-right: 25px !important;
+}
+
+.fresh-nav-links .nav-link {
+    color: #f4f8f2;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 25px 10px 23px;
+    white-space: nowrap;
+}
+
+.fresh-nav-links .nav-link:hover {
+    color: #b9e86b;
+}
+
+.fresh-nav-links .nav-link.active {
+    color: #c6ed78;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-icon:hover {
+    color: #b9e86b;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 68px;
+    height: 38px;
+    padding: 0 15px;
+    color: white;
+    border: 1px solid rgba(202,231,164,0.7);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 72px;
+    height: 38px;
+    padding: 0 16px;
+    background: #c7ed79;
+    color: #073b24;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.menu-btn {
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 8px 10px;
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+
+.menu-btn .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* DESKTOP NAVBAR */
+
+@media (min-width: 992px) {
+
+    .fresh-navbar .navbar-collapse {
+        display: flex !important;
+        align-items: center;
+        flex-basis: auto;
+    }
+
+    .fresh-navbar .fresh-nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fresh-navbar .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .fresh-navbar .menu-btn {
+        display: none;
+    }
+}
+
+
+/* MOBILE NAVBAR */
+
+@media (max-width: 991px) {
+
+    .navbar-container {
+        padding: 0 20px;
+    }
+
+    .fresh-nav-links {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fresh-nav-links .nav-link {
+        padding: 10px 5px;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================
+   PRODUCT PAGE
+========================= */
+
+.details-page {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #0b633d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    color: #9dcc78;
+}
+
+
+/* PRODUCT DETAILS */
+
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(40,70,45,0.08);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8faf7;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: contain;
+}
+
+
+/* PRODUCT INFO */
+
+.product-info h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #0b633d;
+}
+
+.product-type {
+    display: inline-block;
+    background: #edf7e8;
+    color: #0b633d;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    color: #718078;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+
+/* DETAILS */
+
+.detail-box {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f7fbf4;
+    border-radius: 12px;
+}
+
+.detail-box p {
+    margin-bottom: 8px;
+}
+
+.detail-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ORDER SECTION */
+
+.order-section {
+    margin-top: 35px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(40,70,45,0.08);
+}
+
+.order-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: #0b633d;
+    margin-bottom: 25px;
+}
+
+.form-control {
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #dfe7dc;
+}
+
+.form-control:focus {
+    border-color: #9dcc78;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: 110px;
+}
+
+.order-btn {
+    margin-top: 15px;
+    background: #0b633d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #084d30;
+}
+
+
+/* SUCCESS MESSAGE */
+
+.order-success {
+    display: none;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background: #e8f7ee;
+    color: #0b633d;
+    border: 1px solid #b9e3c8;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.order-success i {
+    margin-right: 8px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background: #123d2a;
+    color: white;
+    padding: 60px 30px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.3fr 1.3fr;
+    gap: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo i {
+    font-size: 35px;
+    color: #9dcc78;
+}
+
+.footer-logo-text h2 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.footer-logo-text span {
+    font-size: 12px;
+    color: #b9cbbb;
+}
+
+.footer-description {
+    margin-top: 20px;
+    color: #c9d5cc;
+    line-height: 1.7;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    background: #9dcc78;
+    color: #123d2a;
+}
+
+.footer-column h3,
+.footer-newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #c9d5cc;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #9dcc78;
+}
+
+.footer-column a span {
+    color: #9dcc78;
+    margin-right: 6px;
+}
+
+.contact-list li {
+    display: flex;
+    gap: 10px;
+    color: #c9d5cc;
+}
+
+.contact-list i {
+    color: #9dcc78;
+    margin-top: 4px;
+}
+
+.footer-newsletter p {
+    color: #c9d5cc;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-form button {
+    width: 45px;
+    border: none;
+    background: #9dcc78;
+    color: #123d2a;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p,
+.footer-bottom-links {
+    margin: 0;
+    color: #b9cbbb;
+    font-size: 14px;
+}
+
+.footer-bottom-links a {
+    color: #b9cbbb;
+    text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+    color: #9dcc78;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .product-details {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-info h1 {
+        font-size: 34px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .details-page {
+        padding: 0 15px;
+        margin: 30px auto;
+    }
+
+    .product-details,
+    .order-section {
+        padding: 22px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar navbar-expand-lg fresh-navbar">
+
+    <div class="container-fluid navbar-container">
+
+        <a href="#" class="navbar-brand fresh-logo">
+
+            <div class="leaf-logo">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div class="logo-text">
+
+                <span class="brand-name">
+                    FreshFind
+                </span>
+
+                <span class="brand-tagline">
+                    Green Basket • Fresh Life
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <button
+            class="navbar-toggler menu-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#freshNavbar"
+        >
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="freshNavbar">
+
+            <ul class="navbar-nav fresh-nav-links">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Market Directory
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="produce-guide.html">
+                        Produce Guide
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Seasonal
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Chatbot
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Contact Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        About Us
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="navbar-right">
+
+                <a href="#" class="nav-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="#" class="nav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="#" class="login-btn">
+                    Login
+                </a>
+
+                <a href="#" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     PRODUCT DETAILS
+========================= -->
+
+<div class="details-page">
+
+
+   <a href="produce guide (2).html" class="back-btn">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back to Produce Guide
+
+    </a>
+
+
+    <div class="product-details">
+
+
+        <!-- PRODUCT IMAGE -->
+
+        <div class="product-image">
+
+            <img
+                src="coriander.png"
+                alt="Coriander"
+            >
+
+        </div>
+
+
+        <!-- PRODUCT INFORMATION -->
+
+        <div class="product-info">
+
+            <h1>
+                Coriander
+            </h1>
+
+            <span class="product-type">
+                Herbs
+            </span>
+
+            <p>
+                Fresh and aromatic coriander leaves,
+                perfect for garnishing salads, curries,
+                chutneys, soups and everyday cooking.
+            </p>
+
+
+            <div class="detail-box">
+
+                <p>
+                    <strong>Price:</strong>
+                    Rs. 120 / Bunch
+                </p>
+
+                <p>
+                    <strong>Unit:</strong>
+                    Bunch
+                </p>
+
+                <p>
+                    <strong>Season:</strong>
+                    All Year
+                </p>
+
+                <p>
+                    <strong>Quality:</strong>
+                    Fresh & Premium
+                </p>
+
+                <p>
+                    <strong>Availability:</strong>
+                    In Stock
+                </p>
+
+                <p>
+                    <strong>Found at:</strong>
+                    Sunnyside, Oakridge
+                </p>
+
+                <p>
+                    <strong>Origin:</strong>
+                    Local Farm
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         ORDER FORM
+    ========================= -->
+
+    <div class="order-section">
+
+        <h2>
+            Order Coriander
+        </h2>
+
+
+        <form id="orderForm">
+
+
+            <div class="row g-3">
+
+
+                <!-- NAME -->
+
+                <div class="col-md-6">
+
+                    <label class="form-label">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="col-md-6">
+
+                    <label class="form-label">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        class="form-control"
+                        placeholder="Enter phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- QUANTITY -->
+
+                <div class="col-md-6">
+
+                    <label class="form-label">
+                        Quantity
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        class="form-control"
+                        placeholder="Enter quantity in Bunch"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="col-md-6">
+
+                    <label class="form-label">
+                        Delivery Location
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter delivery location"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ADDITIONAL DETAILS -->
+
+                <div class="col-12">
+
+                    <label class="form-label">
+                        Additional Details
+                    </label>
+
+                    <textarea
+                        class="form-control"
+                        placeholder="Any special request?"
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORDER BUTTON -->
+
+            <button
+                type="submit"
+                class="order-btn"
+            >
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Place Order
+
+            </button>
+
+
+            <!-- SUCCESS MESSAGE -->
+
+            <div
+                id="orderSuccess"
+                class="order-success"
+            >
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Order Placed Successfully!
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <div class="footer-logo-text">
+
+                        <h2>
+                            FreshFind
+                        </h2>
+
+                        <span>
+                            Green Basket • Fresh Life
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="footer-description">
+
+                    Fresh produce. Local markets.<br>
+                    Right around you.
+
+                </p>
+
+
+                <div class="footer-socials">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            <span>›</span> Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>›</span> Market Directory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="produce-guide.html">
+                            <span>›</span> Produce Guide
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>›</span> Seasonal
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>›</span> Chatbot
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>›</span> Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>›</span> About Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact Info
+                </h3>
+
+                <ul class="contact-list">
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Karachi, Pakistan</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+92 21 1234 5678</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@freshfind.pk</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mon – Sun | 8:00 AM – 8:00 PM</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <h3>
+                    Stay Updated
+                </h3>
+
+                <p>
+                    Get the latest market updates,
+                    seasonal picks and more.
+                </p>
+
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe"
+                    >
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 FreshFind. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <span>|</span>
+
+                <a href="#">
+                    Terms of Service
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     ORDER SCRIPT
+========================= -->
+
+<script>
+
+const orderForm =
+    document.getElementById("orderForm");
+
+const orderSuccess =
+    document.getElementById("orderSuccess");
+
+
+orderForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    orderSuccess.style.display = "block";
+
+    orderForm.reset();
+
+});
+
+</script>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
+
